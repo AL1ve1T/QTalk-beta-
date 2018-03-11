@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceChatClientWindows", "VoiceChatClientWindows\VoiceChatClientWindows.csproj", "{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceChatService", "VoiceChatService\VoiceChatService.csproj", "{0B64E0F1-B389-480B-944A-DA26BF0D4868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceChatService.Tests", "VoiceChatService.Tests\VoiceChatService.Tests.csproj", "{67698471-8CD0-4802-94E6-1255A474DCD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Debug|x86.ActiveCfg = Debug|x86
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Debug|x86.Build.0 = Debug|x86
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Release|x86.ActiveCfg = Release|x86
+		{CE42379A-4BF1-44C8-8BA6-A1950AC20CFA}.Release|x86.Build.0 = Release|x86
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Debug|x86.Build.0 = Debug|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B64E0F1-B389-480B-944A-DA26BF0D4868}.Release|x86.Build.0 = Release|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Debug|x86.Build.0 = Debug|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Release|x86.ActiveCfg = Release|Any CPU
+		{67698471-8CD0-4802-94E6-1255A474DCD0}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

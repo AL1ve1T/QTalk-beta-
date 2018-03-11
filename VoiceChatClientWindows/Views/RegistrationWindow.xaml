@@ -1,0 +1,76 @@
+﻿<Window x:Class="VoiceChatClientWindows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoiceChatClientWindows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="700" Width="422" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Icon="icons/003-chat.png">
+    <Grid Background="#FFBEBED3" MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown">
+        <Ellipse HorizontalAlignment="Left" Height="163" Stroke="#FF3294C4" VerticalAlignment="Top" Width="163" Margin="132,17,0,0"/>
+        <Label Content="VC" HorizontalAlignment="Left" Margin="165,47,0,0" VerticalAlignment="Top" FontSize="72" Background="#FFBEBED3" FontFamily="Showcard Gothic" Foreground="#FF58A0C8" RenderTransformOrigin="0.5,0.511" Height="90" Width="90"/>
+        <Button Content="" Margin="380,0,0,668" IsDefault="True" HorizontalAlignment="Left" Width="42" x:Name="ExitBtn" Click="ExitBtn_Click" RenderTransformOrigin="0.5,0.5" BorderThickness="0">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <Setter Property="BorderThickness" Value="0" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Background>
+                <ImageBrush ImageSource="icons/close.png" Stretch="Uniform">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.6" ScaleY="0.6"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+
+        </Button>
+        <TextBox Name="EmailBox" HorizontalAlignment="Left" Height="29" Margin="69,253,0,0" TextWrapping="Wrap" Text="sample@sample.com" VerticalAlignment="Top" Width="292" FontFamily="Tahoma" FontSize="16" Foreground="#FF58A0C8" FontWeight="Bold" GotFocus="EmailBox_OnGotFocus"/>
+        <Label Content="E-mail :" HorizontalAlignment="Left" Margin="69,220,0,0" VerticalAlignment="Top" Width="292" Foreground="#FF58A0C8" FontSize="18" Height="33" FontFamily="Showcard Gothic"/>
+        <Label Content="username :" HorizontalAlignment="Left" Margin="69,293,0,0" VerticalAlignment="Top" Width="292" Foreground="#FF58A0C8" FontSize="18" Height="33" FontFamily="Showcard Gothic"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="69,372,0,0" VerticalAlignment="Top" Width="292" Foreground="#FF58A0C8" FontSize="18" Height="33" FontFamily="Showcard Gothic"/>
+        <Label Content="Repeat password :" HorizontalAlignment="Left" Margin="69,455,0,0" VerticalAlignment="Top" Width="292" Foreground="#FF58A0C8" FontSize="18" Height="33" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="NickNameBox" HorizontalAlignment="Left" Height="29" Margin="69,326,0,0" TextWrapping="Wrap" Text="sample1337" VerticalAlignment="Top" Width="292" FontFamily="Tahoma" FontSize="16" Foreground="#FF58A0C8" FontWeight="Bold" GotFocus="NickNameBox_OnGotFocus"/>
+        <Label Name="ErrorMsg" Content="" HorizontalAlignment="Left" Margin="10,607,0,0" VerticalAlignment="Top" Width="402" Height="59" Foreground="Red" FontFamily="Showcard Gothic" HorizontalContentAlignment="Center"/>
+        <PasswordBox Name ="PassBox" Password="********" HorizontalAlignment="Left" Margin="69,405,0,0" VerticalAlignment="Top" Width="292" Height="29" GotFocus="PassBox_OnGotFocus" FontSize="16" FontFamily="Tahoma"/>
+        <PasswordBox Name ="PassRepeatBox" Password="********" HorizontalAlignment="Left" Margin="69,488,0,0" VerticalAlignment="Top" Width="292" Height="29" GotFocus="RePassBox_OnGotFocus" FontSize="16" FontFamily="Tahoma"/>
+        <Button Content="" Margin="165,538,0,98" IsDefault="True" HorizontalAlignment="Left" Width="90" x:Name="SendForm" Click="SendForm_Click" RenderTransformOrigin="0.5,0.5" BorderThickness="0">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <Setter Property="BorderThickness" Value="0" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Background>
+                <ImageBrush ImageSource="icons/enter.png" Stretch="Uniform">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="0.6" ScaleY="0.6"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Button.Background>
+
+        </Button>
+    </Grid>
+</Window>
