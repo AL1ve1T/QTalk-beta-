@@ -11,7 +11,6 @@
 # Note: This is only used by command line
 ###############################################################################
 #*.cs     diff=csharp
-#*.js linguist-vendored=false
 
 ###############################################################################
 # Set the merge driver for project and solution files
@@ -62,3 +61,6 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+* linguist-vendored
+*.js linguist-vendored=true
